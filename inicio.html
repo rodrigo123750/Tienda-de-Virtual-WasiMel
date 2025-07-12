@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChiGlobalJoyH – Tu estilo, tu tienda con carrito de compras">
+  <meta property="og:title" content="ChiGlobalJoyH | Tu estilo, tu tienda">
+  <meta property="og:description" content="Compra ropa y accesorios con servicio a domicilio y asesoría personalizada.">
+  <title>WasiMel</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo/logo.jpg" alt="" class="logo-img" >
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#atencion">Atención</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+        <section class="portada" id="inicio">
+            <h1>!!Bienvenido¡¡ </h1>
+            <p>los mejores productos de la region</p>
+          </section>
+      <a href="#productos" class="btn-primary">Ver Productos</a>
+    </section>
+
+    <!-- OFERTAS -->
+    <section id="ofertas" class="animate-up">
+      <h2>Ofertas Especiales</h2>
+      <div class="galeria-ofertas">
+        <img src="productos de la zona/carne de cordero.jpg" alt="Oferta carne">
+        <img src="productos de la zona/queso peque.jpg" alt="oferta lacteo">
+        <img src="productos de la zona/yogurt natural sabor vainilla.jpg" alt="Oferta lacteo">
+        <img src="productos de la zona/queso tamaño normal.jpg" alt="Oferta lacteo">
+      </div>
+    </section>
+
+
+    <!-- PRODUCTOS -->
+     <h2>Productos</h2>
+    <section id="products" class="animate-up">
+  
+
+  <div class="product">
+    <img src="productos de la zona/queso peque.jpg" alt="queso">
+    <p>Queso Natural Precocido</p>
+    <span>  QUESO NATURAL - S/. 10</span>
+          <button class="btn-add" data-nombre="queso pequeño" data-precio="7">Añadir al carrito</button>
+    <p>precio sugerido: S/10</p>
+  </div>
+  
+  <div class="product">
+    <img src="productos de la zona/queso paria.jpeg" alt="queso Paria">
+    <p>Queso Natural Y BIEN HECHO</p>
+    <span>  QUESO PARIA - S/. 18</span>
+          <button class="btn-add" data-nombre="queso Paria" data-precio="18">Añadir al carrito</button>
+    <p>precio sugerido: S/20</p>
+  </div>
+  
+  <div class="product">
+    <img src="productos de la zona/yogurth peque.jpg" alt="yogurth pequeño">
+    <p>yogurth Natural sabor vainilla</p>
+    <span>  yogurth NATURAL - S/. 1</span>
+          <button class="btn-add" data-nombre="yogurt pequeño" data-precio="1">Añadir al carrito</button>
+    <p>precio sugerido: S/1</p>
+  </div>
+</section>
+
+
+      <!-- Añade más productos según necesidad -->
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="animate-up">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Envío a domicilio</li>
+        <li>Asesoría de estilo</li>
+        <li>Pagos en línea seguros</li>
+      </ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="animate-up">
+      <h2>Contáctanos</h2>
+      <form id="form-contacto" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Enviar</button>
+      </form>
+    </section>
+
+    <!-- ATENCIÓN -->
+    <section id="atencion" class="animate-up">
+      <h2>Atención al Cliente</h2>
+      <p>Puedes escribirnos por WhatsApp o revisar nuestras <a href="#989592507">WhatsApp</a>.</p>
+      <button id="chat-btn" class="btn-secondary">Iniciar Chat</button>
+    </section>
+  </main>
+
+  <!-- CARRITO -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3>Tu Carrito</h3>
+        RC es de 0.50 centimos
+        <button class="btn-close" id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        Total: S/. <span id="cartTotal">0.50</span>
+      </div>
+    </div>
+  </div>
+  <button id="openCart" class="btn-secondary" style="position:fixed; bottom:1rem; right:1rem;">Ver Carrito (0)</button>
+
+  <footer>
+    <p>&copy; 2025 WasiMel Todos los derechos reservados en RODRIGO.</p>
+  
+  <script src="script.js"></script>
+</body>
+</html>

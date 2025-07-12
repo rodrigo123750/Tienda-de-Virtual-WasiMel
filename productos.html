@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChiGlobalJoyH – Tu estilo, tu tienda con carrito de compras">
+  <meta property="og:title" content="ChiGlobalJoyH | Tu estilo, tu tienda">
+  <meta property="og:description" content="Compra ropa y accesorios con servicio a domicilio y asesoría personalizada.">
+  <title>Productos-WasiMel</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo/logo.jpg" alt="" class="logo-img" >
+    </div>
+    <nav>
+      <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="descrep.html">Descrip</a></li>
+        <li><a href="independiente.html">+</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    
+
+
+
+    <!-- PRODUCTOS -->
+     <h2>Productos</h2>
+    <section id="products" class="animate-up">
+  
+
+  <div class="product">
+    <img src="productos de la zona/queso peque.jpg" alt="queso">
+    <p>Queso Natural Precocido-14 soles</p>
+    <span> 1.2 kg aprox </span>
+          <button class="btn-add" data-nombre="queso pequeño" data-precio="7">Añadir al carrito</button>
+    <p>precio sugerido: S/10</p>
+  </div>
+  
+  <div class="product">
+    <img src="productos de la zona/queso paria.jpeg" alt="queso Paria">
+    <p> Queso Natural Paria- 18 soles</p>
+    <span>  1.50 Kg aprox</span>
+          <button class="btn-add" data-nombre="queso Paria" data-precio="18">Añadir al carrito</button>
+    <p>precio sugerido: S/20</p>
+  </div>
+  
+  <div class="product">
+    <img src="productos de la zona/yogurth peque.jpg" alt="yogurth pequeño">
+    <p>yogurth Natural sabor vainilla</p>
+    <span> 300 ML aprox - S/. 1</span>
+          <button class="btn-add" data-nombre="yogurt pequeño" data-precio="1">Añadir al carrito</button>
+    <p>precio sugerido: S/1</p>
+  </div>
+
+  <div class="product">
+    <img src="productos de la zona/queso cortado.jpeg" alt="Queso Cortado">
+    <p>queso cortado Paria</p>
+    <span>  1 kilo - S/. 11</span>
+          <button class="btn-add" data-nombre="Queso Cortado" data-precio="11">Añadir al carrito</button>
+    <p>precio sugerido: S/12</p>
+  </div>
+
+  <div class="product">
+    <img src="productos de la zona/papa ruque.jpeg" alt="papa ruque">
+    <p>papa Variedad RUQUE </p>
+    <span>  1 Kg aprox - S/. 1.50</span>
+          <button class="btn-add" data-nombre="papa ruque" data-precio="1.5">Añadir al carrito</button>
+    <p>precio sugerido: S/3</p>
+  </div>
+
+  <div class="product">
+    <img src="productos de la zona/moraya.jpeg" alt="Moraya Blanca">
+    <p>Moraya Harinosa</p>
+    <span>  1.2 Kg aprox - S/. 17</span>
+          <button class="btn-add" data-nombre="Moraya" data-precio="17">Añadir al carrito</button>
+    <p>precio sugerido: S/20</p>
+  </div>
+
+  <div class="product">
+    <img src="productos de la zona/leche.jpeg" alt="Leche de Vaca">
+    <p>Leche de vaca natural</p>
+    <span>  Moraya - S/. 2</span>
+          <button class="btn-add" data-nombre="Leche" data-precio="2">Añadir al carrito</button>
+    <p>precio sugerido: S/2.50</p>
+  </div>
+
+  <div class="product">
+    <img src="productos de la zona/mantequilla.jpeg" alt="Mantequilla">
+    <p>Mantequilla Natural</p>
+    <span> 300 g aprox- S/.4</span>
+          <button class="btn-add" data-nombre="Mantequilla" data-precio="3.50">Añadir al carrito</button>
+    <p>precio sugerido: S/5</p>
+  </div>
+</section>
+
+
+    
+
+    
+     <!-- CONTACTO -->
+      <section id="contacto" class="animate-up">
+        <h2></h2>
+      <form id="form-contacto" novalidate>
+ 
+      </form>
+      
+    </section>
+
+    
+    
+   
+  </main>
+
+   <!-- ATENCIÓN -->
+    <section id="atencion" class="animate-up">
+       <button id="chat-btn"></button> 
+    </section>
+
+  <!-- CARRITO -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-modal">
+
+      <div class="cart-header">
+        <h3>Tu Carrito</h3>
+        <button class="btn-close" id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        Total: S/. <span id="cartTotal">0.00</span>
+      </div>
+    </div>
+  </div>
+  <button id="openCart" class="btn-secondary" style="position:fixed; bottom:1rem; right:1rem;">Ver Carrito (0)</button>
+
+  <footer>
+    <p>&copy; 2025 WasiMel. Todos los derechos reservados en RODRIGO.</p>
+  
+  <script src="script.js"></script>
+</body>
+</html>
